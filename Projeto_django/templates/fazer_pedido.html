@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Delicious Express</title>
+</head>
+<body>
+    <div class="home">
+        <header>
+            <nav class="cabecalho">
+                <div class="icones">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok fa-2x"></i>
+                    </a>
+                </div>
+                <div class="logotipo">
+                    <img src="{% static 'imagens/logotipo.png' %}" alt="logotipo delivery">
+                </div>
+            </nav>
+            <main>
+                <h1>SABORES QUE COMBINAM COM SEU ESTILO DE VIDA</h1>
+                <p>Horário de funcionameno: <span>08:00</span> às <span>23:00 h</span></p>
+                <a href="https://t.me/Botkkktestkk_bot" class="botao" target="_blank">Fazer Pedido</a>
+            </main>
+        </header>
+    </div>
+    <section class="sobre">
+        <div class="sobre-conteudo aos-init aos-animate" data-aos="zoom-out-right" data-aos-delay="100">
+            <img src="{% static 'imagens/Cardapio(3).jpg' %}" alt="">
+        </div>
+        <div class="sobre-descricao aos-init aos-animate" data-aos="zoom-out-left" data-aos-delay="300">
+            <h2>Sobre</h2>
+            <p class="descricao">Delicious Express é muito mais do que um simples serviço de delivery. É um universo de sabores que se harmonizam com cada momento da sua vida. Nossa variedade de opções, que inclui pizzas deliciosamente preparadas, açaís refrescantes e saladas frescas e nutritivas, oferece algo para todos os gostos e estilos de vida. É o lugar onde o prazer da comida se encontra com a conveniência da entrega rápida. Entre em nossa jornada gastronômica e descubra como nossos sabores podem transformar seus momentos em experiências memoráveis.</p>
+            <p class="horario">Horário de funcionamento: <strong>08:00</strong> às <strong>23:00 h</strong></p>
+        </div>
+    </section>
+    <section class="servicos">
+    <div class="servivos-conteudo aos-init aos-animate" data-aos="fade-down" data-aos-delay="500" >
+        <h2>Cardápio</h2>
+        <p>"Na Delicious Express, cada prato é uma experiência única, entregue diretamente à sua porta. De pizzas artesanais a deliciosos açaís e saladas frescas, oferecemos uma variedade de sabores para satisfazer todos os paladares."</p>
+    </div>
+        <section class="cardapio aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+            <div class="comidas">
+                <img src="{% static 'imagens/Pizza(2).jpg' %}" alt="Pizza">
+                <div class="comidas-info">
+                    <strong class="texto">Pizza</strong>
+                    <button>R$45,00</button>
+                </div>
+            </div>
+            <div class="comidas">
+                <img src="{% static 'imagens/Açai na tigela.jpg' %}" alt="Açai">
+                <div class="comidas-info">
+                    <strong class="texto">Açai</strong>
+                    <button>R$22,00</button>
+                </div>
+            </div>
+            <div class="comidas">
+                <img src="{% static 'imagens/Salada de frutas.jpg' %}" alt="Salada">
+                <div class="comidas-info">
+                    <strong class="texto">Salada de Frutas</strong>
+                    <button>R$15,00</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="localizacao">
+        <h2>Venham nos Conhecer</h2>
+    </div>
+    <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.2660105548835!2d-37.062403288868836!3d-10.943267389170812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3e98579c02d%3A0xeac25bc9180cda2!2sShopping%20Jardins!5e0!3m2!1spt-BR!2sbr!4v1716317948300!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <div class="footer-icones">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+        <div class="footer-logo">
+            <img src="../static/imagens/logotipo.png" alt="">
+        </div>
+        <div class="footer-texto">
+            <p> Copyright | Delivery - Jonas Santos - 2024 - Todos os direitos reservados. </p>
+        </div>
+        
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

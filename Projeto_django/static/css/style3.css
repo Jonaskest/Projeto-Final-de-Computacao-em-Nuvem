@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    /* background-color: rgba(66, 1, 66); */
+    background:linear-gradient(to bottom, rgba(66, 1, 66) 70%, #06121e 30%);
+    font-family: Sora, Helvetica, sans-serif;
+    
+}
+/* div{
+    display: block;
+    unicode-bidi: isolate;
+} */
+
+.logotipo{
+    text-align: center;
+}
+.logotipo img{
+    width: 300px;
+    
+    
+}
+/* .icones{
+    text-align: center;
+} */
+.fa-brands{
+    color: white;
+    margin: 10px;
+    
+}
+main h1{
+    /* margin-top: 10px; */
+    line-height: 150%;
+    font-size: 46px;
+}
+main p{
+    margin-top: 20px;
+    line-height: 150%;
+    font-size: 23px;
+    
+}
+span{
+    color: #e6ce2d;
+    font-weight: bold;
+}
+.botao{
+    margin-top: 50px;
+    background-color: #e6ce2d;
+    padding: 14px 28px;
+    color: #0c2135;
+    font-size: 18px;
+    font-weight: 700;
+}
+.botao:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+@keyframes scaleButton{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+main{
+   margin-top: 200px;
+    /* text-align: center; */
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    /* max-width: 940px; */
+    color: white;
+}
+/* .home{
+    position: relative;
+    height: 100vh;
+    color: white;
+} */
+.home{
+    /* display: block; */
+    /* position: absolute; */
+    /* position: relative; */
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(66, 1, 66, 0.719), #06121e), url(../imagens/delivery.jpg);
+    /* width: 100%;
+    height: 100%; */
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+.sobre{
+    background:linear-gradient(to top, rgba(66, 1, 66, 0.719), #06121e);
+    color: white;
+    height: 100vh;
+    
+}
+.sobre-conteudo img{
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 700px;
+}
+.sobre-descricao{
+    margin-left: 55%;
+    margin-right: 40px;
+    text-align: justify;
+    position: relative;
+    bottom: 500px;
+}
+
+.sobre-descricao h2{
+    margin-bottom: 20px;
+    color: #e6ce2d;
+    font-size: 38px;
+}
+.descricao{
+    font-size: 30px;
+}
+.sobre-descricao p{
+    margin-top: 20px;
+    font-size: 30px;
+}
+strong{
+    color: #e6ce2d;
+}
+.servicos{
+    height: 100vh;
+    background:linear-gradient(to bottom, rgba(66, 1, 66, 0.719), #06121e);
+}
+
+.servivos-conteudo{
+    margin-bottom: 20px;
+}
+.servivos-conteudo h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #e6ce2d;
+}
+.servivos-conteudo p{
+    /* line-height: 150%; */
+    margin-top: 50px;
+    margin: auto;
+    text-align: center;
+    max-width: 780px;
+    font-size: 30px;
+    text-align: justify;
+    color: white;
+
+}
+
+.cardapio{
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+
+.comidas{
+    flex: 1;
+    margin: 10px;
+    max-width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #edeaef;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.comidas img{
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    /* width: 160px; */
+}
+.comidas:hover img{
+    transform: scale(1.1) translateY(-5%);
+}
+.comida-info{
+    padding: 10px;
+}
+.comidas button{
+    background-color: #F7AD45;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.texto{
+    font-size: 20px;
+    color: black;
+    margin-right: 100px;
+}
+.comidas button:hover{
+    background-color: #bb7007;
+}
+.localizacao h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e6ce2d;
+}
+.mapa{
+    text-align: center;
+}
+.footer-icones{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-logo{
+    text-align: center;
+}
+.footer-logo img{
+    width: 300px;
+}
+.footer-texto{
+    text-align: center;
+    margin-bottom: 140px;
+    color: white;
+}
