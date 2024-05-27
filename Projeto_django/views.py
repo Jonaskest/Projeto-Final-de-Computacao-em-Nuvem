@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def fazer_pedido(request):
-    return render(request, 'fazer_pedido.html')
+def index(request):
+    return render(request, 'index.html')
