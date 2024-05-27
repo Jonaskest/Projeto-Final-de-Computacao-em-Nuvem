@@ -3,13 +3,17 @@
   "builds": [
     {
       "src": "manage.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "serverless": true
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "manage.py"
+      "dest": "/manage.py"
     }
   ]
 }
+
